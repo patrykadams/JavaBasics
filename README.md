@@ -1,18 +1,36 @@
-## Getting Started
+# Java Mastery: Pareto Principle Curriculum
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository demonstrates core Java competencies by focusing on the high-impact concepts that handle the majority of real-world use cases. The project is structured into modular lessons, each following industry best practices and clean code principles.
 
-## Folder Structure
+## Project Roadmap
 
-The workspace contains two folders by default, where:
+### 1. Foundations
+- **Location**: `src/lesson01_foundations/`
+- **Key Concepts**: Logic gates, primitive types, array iteration, and algorithmic efficiency.
+- **Demo**: `FoundationProcessor.java` - A statistical tool and prime number filter.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### 2. Object-Oriented Programming (OOP)
+- **Location**: `src/lesson02_oop/`
+- **Key Concepts**: Inheritance, Encapsulation, Polymorphism, and Interface-driven design.
+- **Demo**: `PaymentSystemDemo.java` - A decoupled payment processing system handling multiple providers through a unified contract.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### 3. Data Management (Collections)
+- **Location**: `src/lesson03_collections/`
+- **Key Concepts**: Dynamic data structures (List, Set, Map) and data modeling (POJOs).
+- **Demo**: `UserManagementSystem.java` - Efficient data storage and O(1) retrieval logic.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### 4. Robustness (Exception Handling)
+- **Location**: `src/lesson04_robustness/`
+- **Key Concepts**: try-catch-finally blocks, checked vs. unchecked exceptions, and custom business logic exceptions.
+- **Demo**: `ExceptionDemo.java` - A banking simulation that handles insufficient funds without crashing.
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## How to Run
+1. Clone the repository.
+2. Ensure you have JDK 17 or higher installed.
+3. Navigate to the `src` directory.
+4. Compile and run any main class using:
+   ```bash
+   javac lessonX_package/ClassName.java
+   java lessonX_package.ClassName
