@@ -24,6 +24,11 @@ This repository demonstrates core Java competencies by focusing on the high-impa
 - **Key Concepts**: try-catch-finally blocks, checked vs. unchecked exceptions, and custom business logic exceptions.
 - **Demo**: `ExceptionDemo.java` - A banking simulation that handles insufficient funds without crashing.
 
+### 5. Modern Java (Lambdas and Streams)
+- **Location**: `src/lesson05_modern_java/`
+- **Key Concepts**: Functional programming, Lambda expressions, and the Stream API for declarative data processing.
+- **Demo**: `StreamProcessor.java` - Advanced filtering, mapping, and aggregation of data collections.
+
 ---
 
 ## How to Run
