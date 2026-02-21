@@ -1,41 +1,64 @@
-# Java Mastery: Pareto Principle Curriculum
+# Java Technical Mastery: Core Curriculum
 
-This repository demonstrates core Java competencies by focusing on the high-impact concepts that handle the majority of real-world use cases. The project is structured into modular lessons, each following industry best practices and clean code principles.
+This repository demonstrates essential Java competencies by focusing on the high-impact concepts used in modern backend development. The project is organized into modular lessons, following industry standards for clean code and project structure.
 
 ## Project Roadmap
 
 ### 1. Foundations
-- **Location**: `src/lesson01_foundations/`
-- **Key Concepts**: Logic gates, primitive types, array iteration, and algorithmic efficiency.
-- **Demo**: `FoundationProcessor.java` - A statistical tool and prime number filter.
+- **Path**: `src/main/java/lesson01_foundations/`
+- **Focus**: Logic, loops, and array manipulation.
+- **Key Demo**: `FoundationProcessor.java` - Performs statistical analysis and prime number filtering on datasets.
 
 ### 2. Object-Oriented Programming (OOP)
-- **Location**: `src/lesson02_oop/`
-- **Key Concepts**: Inheritance, Encapsulation, Polymorphism, and Interface-driven design.
-- **Demo**: `PaymentSystemDemo.java` - A decoupled payment processing system handling multiple providers through a unified contract.
+- **Path**: `src/main/java/lesson02_oop/`
+- **Focus**: Interface-driven design, inheritance, and encapsulation.
+- **Key Demo**: `PaymentSystemDemo.java` - A decoupled payment system demonstrating polymorphism across different providers.
 
 ### 3. Data Management (Collections)
-- **Location**: `src/lesson03_collections/`
-- **Key Concepts**: Dynamic data structures (List, Set, Map) and data modeling (POJOs).
-- **Demo**: `UserManagementSystem.java` - Efficient data storage and O(1) retrieval logic.
+- **Path**: `src/main/java/lesson03_collections/`
+- **Focus**: Dynamic data structures (List, Set, Map).
+- **Key Demo**: `UserManagementSystem.java` - Efficient data storage and O(1) retrieval using HashMaps.
 
 ### 4. Robustness (Exception Handling)
-- **Location**: `src/lesson04_robustness/`
-- **Key Concepts**: try-catch-finally blocks, checked vs. unchecked exceptions, and custom business logic exceptions.
-- **Demo**: `ExceptionDemo.java` - A banking simulation that handles insufficient funds without crashing.
+- **Path**: `src/main/java/lesson04_robustness/`
+- **Focus**: Defensive programming and custom business exceptions.
+- **Key Demo**: `ExceptionDemo.java` - A banking simulation that handles error states without application crashes.
 
 ### 5. Modern Java (Lambdas and Streams)
-- **Location**: `src/lesson05_modern_java/`
-- **Key Concepts**: Functional programming, Lambda expressions, and the Stream API for declarative data processing.
-- **Demo**: `StreamProcessor.java` - Advanced filtering, mapping, and aggregation of data collections.
+- **Path**: `src/main/java/lesson05_modern_java/`
+- **Focus**: Functional programming and declarative data pipelines.
+- **Key Demo**: `StreamProcessor.java` - Advanced filtering and transformation of collections using the Stream API.
+
+### 6. The Professional Layer (Testing)
+- **Path**: `src/main/java/lesson06_testing/`
+- **Focus**: Automated Unit Testing and Build Management.
+- **Key Demo**: `CalculatorTest.java` - JUnit 5 tests ensuring logic reliability.
 
 ---
 
-## How to Run
-1. Clone the repository.
-2. Ensure you have JDK 17 or higher installed.
-3. Navigate to the `src` directory.
-4. Compile and run any main class using:
-   ```bash
-   javac lessonX_package/ClassName.java
-   java lessonX_package.ClassName
+## Technical Setup
+
+### Build System
+This project uses **Maven** for dependency management.
+- **Java Version**: 17 or higher
+- **Testing Framework**: JUnit 5
+
+### How to Run (IDE)
+The easiest way to run this project is using an IDE like **IntelliJ IDEA** or **VS Code**:
+1. Open the project folder.
+2. Locate the `main` method in any lesson's `.java` file.
+3. Click the **Run** (Play) button next to the method.
+
+### How to Run Tests
+To verify the logic in Lesson 6:
+1. Navigate to `src/test/java/lesson06_testing/CalculatorTest.java`.
+2. Right-click the file and select **Run 'CalculatorTest'**.
+3. Alternatively, use the IDE's **Maven** tool window and run the **test** lifecycle.
+
+---
+
+## Best Practices Observed
+- **Standard Directory Layout**: Follows the Maven `src/main/java` and `src/test/java` convention.
+- **Separation of Concerns**: Business logic is separated from runner classes and tests.
+- **Self-Documenting Code**: Meaningful naming conventions and English comments.
+- **Decoupling**: Extensive use of Interfaces to ensure code flexibility.
