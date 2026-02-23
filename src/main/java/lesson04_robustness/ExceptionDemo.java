@@ -1,4 +1,4 @@
-package lesson04_robustness;
+package main.java.lesson04_robustness;
 
 public class ExceptionDemo {
     public static void main(String[] args) {
