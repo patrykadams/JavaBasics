@@ -1,4 +1,4 @@
-package main.java.lesson02_oop;
+package lesson02_oop;
 
 /**
  * Credit Card implementation of PaymentMethod.

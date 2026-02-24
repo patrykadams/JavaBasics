@@ -1,4 +1,4 @@
-package main.java.lesson04_robustness;
+package lesson04_robustness;
 
 public class BankAccount {
     private double balance;

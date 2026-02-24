@@ -1,4 +1,4 @@
-package main.java.lesson01_foundations;
+package lesson01_foundations;
 
 /**
  * Lesson 1: Foundations

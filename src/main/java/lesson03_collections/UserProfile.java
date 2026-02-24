@@ -1,4 +1,4 @@
-package main.java.lesson03_collections;
+package lesson03_collections;
 
 /**
  * Data model representing a user.

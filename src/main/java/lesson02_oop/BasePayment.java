@@ -1,4 +1,4 @@
-package main.java.lesson02_oop;
+package lesson02_oop;
 
 /**
  * Abstract class to provide shared logic and state for subclasses.

@@ -1,4 +1,4 @@
-package main.java.Lesson06_Testing;
+package Lesson06_Testing;
 
 /**
  * A simple service to demonstrate unit testing.

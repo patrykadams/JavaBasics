@@ -1,4 +1,4 @@
-package main.java.lesson05_modern_java;
+package lesson05_modern_java;
 
 public class Product {
     private final String name;
