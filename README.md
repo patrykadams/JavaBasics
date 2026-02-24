@@ -37,8 +37,7 @@ This repository demonstrates essential Java competencies by focusing on the high
 ### 7. Spring Boot API
 - **Path**: `src/main/java/lesson07_spring/`
 - **Focus**: Building RESTful Web Services and handling HTTP requests.
-- **Key Demo**: `GreetingController.java` - A live API endpoint that returns JSON data to a browser or mobile app.
-
+- **Key Demo**: `ProductController.java` & `ProductService.java` - A live API that serves filtered product data via HTTP.
 ---
 
 ## Technical Setup
