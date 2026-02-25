@@ -1,37 +1,25 @@
 package lesson07_spring;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
-/**
- * Service Layer: This is where the heavy lifting happens.
- * It keeps the Controller clean.
- */
 @Service
 public class ProductService {
 
-    // Mock database of products
-    private final List<ProductData> catalog = Arrays.asList(
-        new ProductData("Laptop", "Electronics", 1200.00),
-        new ProductData("Phone", "Electronics", 800.00),
-        new ProductData("Coffee Maker", "Kitchen", 150.00),
-        new ProductData("Blender", "Kitchen", 100.00)
-    );
+    private final ProductRepository repository;
 
-    public List<ProductData> getAllProducts() {
-        return catalog;
+    public ProductService(ProductRepository repository) {
+        this.repository = repository;
+        // Pre-loading some data for the demo
+        this.repository.save(new ProductEntity("Gaming Laptop", "Electronics", 1500.0));
+        this.repository.save(new ProductEntity("Office Chair", "Furniture", 250.0));
     }
 
-    public List<ProductData> getProductsByCategory(String category) {
-        return catalog.stream()
-            .filter(p -> p.getCategory().equalsIgnoreCase(category))
-            .collect(Collectors.toList());
+    public List<ProductEntity> getAllProducts() {
+        return repository.findAll();
+    }
+
+    public List<ProductEntity> getByCategory(String category) {
+        return repository.findByCategoryIgnoreCase(category);
     }
 }
-
-/**
- * Simple record for data transfer (New in Modern Java).
- */
-record ProductData(String name, String category, double price) {}
