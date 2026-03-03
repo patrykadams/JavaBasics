@@ -38,6 +38,17 @@ This repository demonstrates essential Java competencies by focusing on the high
 - **Path**: `src/main/java/lesson07_spring/`
 - **Focus**: Building RESTful Web Services and handling HTTP requests.
 - **Key Demo**: `ProductController.java` & `ProductService.java` - A live API that serves filtered product data via HTTP.
+
+
+### 8. Persistence (Spring Data JPA)
+- **Path**: `src/main/java/lesson07_spring/`
+- **Focus**: Object-Relational Mapping (ORM) and H2 In-Memory Database.
+- **Key Demo**: `ProductRepository.java` - Automated database queries and data persistence.
+
+### 9. API Robustness (Global Exception Handling)
+- **Path**: `src/main/java/lesson07_spring/`
+- **Focus**: Controller Advice and standardized JSON error responses.
+- **Key Demo**: `GlobalExceptionHandler.java` - Intercepts application errors to provide clean, recruiter-friendly feedback instead of stack traces.
 ---
 
 ## Technical Setup
