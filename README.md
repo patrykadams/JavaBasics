@@ -49,6 +49,16 @@ This repository demonstrates essential Java competencies by focusing on the high
 - **Path**: `src/main/java/lesson07_spring/`
 - **Focus**: Controller Advice and standardized JSON error responses.
 - **Key Demo**: `GlobalExceptionHandler.java` - Intercepts application errors to provide clean, recruiter-friendly feedback instead of stack traces.
+
+### 10. Security (Spring Security)
+- **Path**: `src/main/java/lesson07_spring/SecurityConfig.java`
+- **Focus**: Role-Based Access Control (RBAC), Authentication, and Authorization.
+- **Key Demo**: Secured endpoints requiring Basic Auth credentials. Differentiates between `USER` (read-only) and `ADMIN` (read/write) permissions.
+
+
+
+
+
 ---
 
 ## Technical Setup
