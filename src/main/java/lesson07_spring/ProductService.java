@@ -20,6 +20,9 @@ public class ProductService {
     }
 
     public List<ProductEntity> getByCategory(String category) {
-        return repository.findByCategoryIgnoreCase(category);
+    if (category.length() < 3) {
+        throw new IllegalArgumentException("Category name must be at least 3 characters long.");
     }
-}
+    return repository.findByCategoryIgnoreCase(category);
+
+}}
