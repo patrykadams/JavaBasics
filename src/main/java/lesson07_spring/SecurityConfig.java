@@ -33,15 +33,15 @@ public class SecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         // Defining two demo users
-        UserDetails user = User.withDefaultSerializer()
+        UserDetails user = User.builder()
             .username("user")
-            .password("password")
+            .password("{noop}password")
             .roles("USER")
             .build();
 
-        UserDetails admin = User.withDefaultSerializer()
+        UserDetails admin = User.builder()
             .username("admin")
-            .password("admin123")
+            .password("{noop}admin123")
             .roles("ADMIN")
             .build();
 

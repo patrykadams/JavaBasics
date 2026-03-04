@@ -15,9 +15,9 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<ProductData> getProducts(@RequestParam(required = false) String category) {
+    public List<ProductEntity> getProducts(@RequestParam(required = false) String category) {
         if (category != null) {
-            return productService.getProductsByCategory(category);
+            return productService.getByCategory(category);
         }
         return productService.getAllProducts();
     }
